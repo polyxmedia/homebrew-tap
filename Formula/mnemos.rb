@@ -5,21 +5,21 @@
 class Mnemos < Formula
   desc "Persistent memory and skills for AI coding agents. MCP-native, single binary, zero deps."
   homepage "https://github.com/polyxmedia/mnemos"
-  version "0.5.7"
+  version "0.5.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/polyxmedia/mnemos/releases/download/v0.5.7/mnemos_0.5.7_Darwin_x86_64.tar.gz"
-      sha256 "b9260a46f446bab3247a577f6cb5a202dc62cbc5c4bd686c6449b911be02010d"
+      url "https://github.com/polyxmedia/mnemos/releases/download/v0.5.8/mnemos_0.5.8_Darwin_x86_64.tar.gz"
+      sha256 "98d0b072a686928ed10d7cd62f74938b20539d91edcbe62cc85846ed2235282a"
 
       define_method(:install) do
         bin.install "mnemos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/polyxmedia/mnemos/releases/download/v0.5.7/mnemos_0.5.7_Darwin_arm64.tar.gz"
-      sha256 "586c52a14408bf1ec7eb61644dfdbde9719f7f0bdf7c94d53ec2d7ffc4772897"
+      url "https://github.com/polyxmedia/mnemos/releases/download/v0.5.8/mnemos_0.5.8_Darwin_arm64.tar.gz"
+      sha256 "d3e1ecc64900bcd64556ec869395d2806aee896472d6e0ab197a8923a63faa15"
 
       define_method(:install) do
         bin.install "mnemos"
@@ -29,15 +29,15 @@ class Mnemos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/polyxmedia/mnemos/releases/download/v0.5.7/mnemos_0.5.7_Linux_x86_64.tar.gz"
-      sha256 "8b973a2e722291f328f229a1eb09a6736464bc30eb395a5592a7c56c347ecffe"
+      url "https://github.com/polyxmedia/mnemos/releases/download/v0.5.8/mnemos_0.5.8_Linux_x86_64.tar.gz"
+      sha256 "bca97758f5c672749d867ede42bf6bb1b04041cd21c93b36cbb7f79dbe99ce76"
       define_method(:install) do
         bin.install "mnemos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/polyxmedia/mnemos/releases/download/v0.5.7/mnemos_0.5.7_Linux_arm64.tar.gz"
-      sha256 "c6d563babbe755fc25c7e3f698305a3d469989f5b5da5720ce82847afc57125e"
+      url "https://github.com/polyxmedia/mnemos/releases/download/v0.5.8/mnemos_0.5.8_Linux_arm64.tar.gz"
+      sha256 "1b15f9b0e1a5956cfc0c655c94fc89a37169e8dc3f7eff95ac878235048fb486"
       define_method(:install) do
         bin.install "mnemos"
       end
